@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lacie Nail</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo_icon.png">
+	<link rel="stylesheet"  type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/lacienail.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	
+</head>
+<body>
+
+	<!-- ==============MENU=========== -->
+	<input type="checkbox" name="" id="control-box">
+	<div class="menu-box container">
+		<div class="menu-logo">
+			<a href="index.html">
+				<img id="logo" src="images/logo.png" alt="LacieNail">
+			</a>
+		</div>
+
+		<label class="hb" for="control-box"><span></span></label>
+		<nav>
+			<ul>
+				<li>
+					<a href="reserve.html" class="here">
+						<span class="en">RESERVE</span>
+						 <span class="ch">線上預約</span>
+					</a>
+				</li>
+				<li>
+					<a href="gallery.html">
+						<span class="en">GALLERY</span>
+						 <span class="ch">作品集</span>
+					</a>
+				</li>
+				<li>
+					<a href="product.html">
+						<span class="en">PRODUCT</span>
+						 <span class="ch">產 品</span>
+					</a>
+				</li>
+				<li>
+					<a href="lesson.html">
+						<span class="en">LESSON</span>
+						<span class="ch">課 程</span>
+					</a>
+				</li>
+				<li>
+					<a href="about.html">
+						<span class="en">ABOUT</span>
+						<span class="ch">關於我們</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<span class="en">CONTACT</span>
+						<span class="ch">聯絡我們</span>
+					</a>
+				</li>
+				<li class="smico login">
+					<div class="icon-box">
+						<div class="pic">
+							<img class="icon" src="images/login_icon.png" alt="login">	
+						</div>
+						<span class="en">LOGIN</span>
+					</div>
+				</li>
+				<li class="smico cart">
+					<div class="icon-box">
+						<div class="pic">
+							<img class="icon" src="images/cart_icon.png" alt="cart">
+						</div>
+						<span class="en">CART</span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="banner_in"></div>
+		<!-- ====================標題==================== -->
+		<div class="re topTitle container">
+			<div class="txtBg animation1">
+				<div class="topTxt">
+					<h1>RESERVE</h1>
+					<h4>預約</h4>
+				</div>
+			</div>	
+		</div>
+		<!-- ====================預約==================== -->
+		<div class="warp container">
+		<div class="warpper">
+			<form action="">
+				<div class="col-xs-12 col-sm-6">
+					<div class="divL">
+						<span class="right"><span class="star">*</span>為必填項目</span>
+						<div class="step">
+							<div class="steptitle">
+								<div class="cir step1">
+									Step1
+								</div>
+								<span>選擇設計師</span>
+								
+								<div class="clearfix"></div>
+							</div>
+							<div class="stepbox">
+								<span><span class="star">*</span>您選擇的設計師：</span>
+								<span class="designer" id="naildesign">設計師</span><span id="inndes"></span>
+							</div>
+
+							<div class="stepbox mycal">
+								<span><span class="star">*</span>您選擇的日期：</span>
+								<div class="yymmdd">
+									<div class="month">
+										<span><</span>
+										<span class="ym">2017年5月</span>
+										<span>></span>
+									</div>
+									<div class="day">
+										<ul class="weeks">
+											<li>日</li>
+											<li>一</li>
+											<li>二</li>
+											<li>三</li>
+											<li>四</li>
+											<li>五</li>
+											<li>六</li>
+										</ul>
+										<ul class="days">
+											<li></li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+											<li>8</li>
+											<li>9</li>
+											<li>10</li>
+											<li>11</li>
+											<li>12</li>
+											<li>13</li>
+											<li>14</li>
+											<li>15</li>
+											<li>16</li>
+											<li>17</li>
+											<li>18</li>
+											<li>19</li>
+											<li>20</li>
+											<li>21</li>
+											<li>22</li>
+											<li>23</li>
+											<li>24</li>
+											<li class="today">25</li>
+											<li class="canch">26</li>
+											<li>27</li>
+											<li class="canch">28</li>
+											<li>29</li>
+											<li class="canch">30</li>
+											<li class="canch">31</li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="stepbox">
+								<span><span class="star">*</span>您的預約項目：</span>
+
+									<select class="sstyle" name="choose" >
+										<option selected="selected">
+											請挑選預約項目
+										</option>
+										<option>
+											基本護理 - 手
+										</option>
+										<option>
+											基本護理 - 足
+										</option>
+										<option>
+											基本護理 - 手足
+										</option>
+										<option>
+											一般凝膠
+										</option>
+										<option>
+											造型凝膠
+										</option>	
+									</select>
+
+							</div>
+							<div class="stepbox">
+								<span><span class="star">*</span>您的預約時段：</span>
+									<select class="sstyle" name="choose">
+										<option selected="selected">
+											請挑選預約時段
+										</option>
+										<option>
+											10:00-11:30
+										</option>
+										<option>
+											13:00-14:30
+										</option>
+										<option>
+											14:30-16:30
+										</option>
+										<option>
+											17:00-18:00
+										</option>	
+									</select>	
+							</div>
+						
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-xs-12 col-sm-6">
+					<div class="divR">
+						<div class="step">
+							<div class="steptitle">
+								<div class="cir step2">Step2</div>
+								<span class="memdata">基本資料填寫</span>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="memdata">
+								<label>
+									<span class="latitle"><span class="star">*</span>您的芳名：</span><input class="sstyle" type="text" name="" >
+								</label>
+							</div>
+
+							<div class="memdata">
+								<label>
+									<span class="latitle"><span class="star">*</span>行動電話：</span><input class="sstyle" type="tel" name=""  placeholder="ex:0912345678">
+								</label>
+							</div>	
+
+							<div class="memdata">
+								<label>
+									<span class="latitle"><span class="star">*</span>生日：</span><input class="sstyle bir" type="date">
+								</label>
+							</div>	
+
+							<div class="memdata">
+								<label>
+									<span class="latitle"><span class="star">*</span>Email：</span><input class="sstyle" type="email" >
+								</lable>
+							</div>
+
+							<div class="memdata">
+								<label>
+									<span class="latitle message">留言：</span>
+									<textarea class="sstyle" rows=3></textarea>
+								</label>	
+							</div>	
+							<div class="check">
+								<input type="checkbox" name="check">我已閱讀<a class="privacy" href="#">隱私權保護政策</a>，並同意接受條款內容<br>
+								<input type="submit" value="確認預約" class="more btn res_btn">
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+		</div>
+		<div class="clearfix"></div>
+<!-- ====================FOOTER==================== -->
+	<div class="footer container">
+		<div class="social">
+			<ul>
+				<li><a href="#" class="fb_btn"><img src="images/fb50.png" alt="Lacie Nail fb"></a></li>
+				<li><a href="#" class="ig_btn"><img src="images/ig50.png" alt="Lacie Nail ig"></a></li>
+			</ul>
+		</div>
+		<div class="copy">
+			<p>© 2017 LACIE NAIL All Rights Reserved.</p>
+		</div>
+		
+	</div>
+	<div><a id="goTop" href="#">TOP</a></div>	
+
+	<div class="re-lightbox-bg">
+		<div class="relightbox">
+			<div class="choDesign">
+				<div>選擇設計師</div>
+				<div class="item item1">
+					<img src="images/desinger/Lacie.jpg">
+					<div class=des-name>Lacie</div>
+				</div>
+				<div class="item item2">
+					<img src="images/desinger/Momo.jpg">
+					<div class=des-name>Mono</div>
+				</div>
+				<div class="item item3">
+					<img src="images/desinger/Alley.jpg">
+					<div class=des-name>Alley</div>
+				</div>
+				<div class="item item4">
+					<img src="images/desinger/Su.jpg">
+					<div class=des-name>Su</div>
+				</div>
+				<div class="item item5">
+					<img src="images/desinger/Yumi.jpg">
+					<div class=des-name>Yumi</div>
+				</div>
+			</div>
+			<a href="" id="btn-close"></a>
+		</div>
+	</div>
+</body>
+</html>
+
